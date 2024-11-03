@@ -1,0 +1,5 @@
+Основной: Forum 400
+
+Segoe UI 300 Italic, 400 Italic
+
+Futura PT Sans-serif 450,400,300

@@ -1,0 +1,24 @@
+﻿{
+    "galleryImages": [
+        {
+            "src": "src/img/gallery-list/photo1.jpg", 
+            "alt": "Фото 1"
+        },
+        {
+            "src": "src/img/gallery-list/photo2.jpg", 
+            "alt": "Фото 2"
+        },
+        {
+            "src": "src/img/gallery-list/photo3.jpg", 
+            "alt": "Фото 3"
+        },
+        {
+            "src": "src/img/gallery-list/photo4.jpg", 
+            "alt": "Фото 4"
+        },
+        {
+            "src": "src/img/gallery-list/photo5.jpg", 
+            "alt": "Фото 5"
+        }
+    ]
+}

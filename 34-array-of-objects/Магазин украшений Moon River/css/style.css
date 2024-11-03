@@ -1,0 +1,1065 @@
+﻿            /* Шрифты */
+/* ---------------------------------- */
+.forum-400{
+    font-family: "Forum", serif;
+    font-weight: 400;
+}
+
+.futura-pt{
+    font-family: "Futura PT";
+    font-weight: 400;
+}
+
+.segoe-ui{
+    font-family: "Segoe UI";
+    font-weight: 300;
+    font-style: italic;
+}
+/* ---------------------------------- */
+
+body{
+    margin: 0;
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20.51px;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+header{
+    width: 1440px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 60px;
+    margin-left: 162px;
+}
+
+.nav-item img{
+    display: block;
+}
+
+.nav-item:last-child{
+    margin-right: 161px;
+}
+
+.nav-list .logo{
+    margin-right: auto;
+}
+
+.nav-list .favorites, .nav-list .user{
+    margin-right: 40px;
+}
+
+.nav-list .buy{
+    margin-right: 80px;
+}
+
+.nav-list .nav-item .buy-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-list .nav-item .buy-link img{
+    margin-right: 10px;
+}
+
+.nav-list .nav-item .buy-link p{
+    font-family: "Futura PT";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23.08px;
+}
+
+.menu{
+    display: flex;
+    width: 30px;
+    height: 16px;
+}
+
+.menu-link{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-line{
+    border: 1.8px solid #FFFFFF;
+    border-radius: 10px;
+    width: inherit;
+}
+
+.background-decor{
+    position: absolute;
+    z-index: -100;
+    width: 50%;
+    height: 1024px;
+    background-color: #272727;
+    margin-left: auto;
+    right: -162px;
+}
+
+main{
+    width: 1440px;
+    margin: 0 auto;
+    /* padding-top: 120px; */
+}
+
+.card{
+    padding-top: 427px;
+    padding-left: 162px;
+}
+
+.card-collection h1{
+    margin: 0;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 71px;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 12px;
+}
+
+.card-collection .wrapper{
+    display: flex;
+    align-items: center;
+    margin-left: 129px;
+}
+
+.card-collection .decoration-underline{
+    box-sizing: border-box;
+    width: 130px;
+    background-color: #272727;
+    height: 1px;
+    margin-right: 38px;
+    align-content: center;
+}
+
+.card-collection a{
+    color: #272727;
+    text-decoration: none;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.card-collection{
+    margin-right: 86px;
+}
+
+.card-preview{
+    display: flex;
+    margin-bottom: 281px;
+}
+
+.card-footer{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.card-language{
+    align-self: flex-end;
+}
+
+.card-description{
+    width: 198px;
+    margin-left: 867px;
+    text-align: right;
+}
+
+.card-language button{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #C4C4C4;
+}
+
+.card-language button:not(:last-child){
+    margin-right: 10px;
+}
+
+.card-language button.active{
+    color: #000000;
+}
+
+
+.card-description h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+}
+
+.card-description p{
+    margin: 0;
+}
+
+.card-description p.materials{
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color: #C2C2C2;
+    margin-bottom: 9px;
+}
+
+.card-description p.price{
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #EFC58B;
+}
+
+.gender-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gender-item.man{
+    background-image: url("../src/img/for-man.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gender-item.woman{
+    background-image: url("../src/img/for-woman.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gender-item img{
+    display: block;
+}
+
+.gender-item a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 710px;
+    height: 587px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #27272766;
+}
+
+.gender-item p{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31px;
+}
+
+.gender-item h2{
+    margin: 0;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 71px;
+    letter-spacing: 0.03em;
+}
+
+.gender-item h2::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+
+.gender-sections{
+    margin-bottom: 20px;
+}
+
+.find-us ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.find-form{
+    width: 710px;
+    height: 604px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+}
+
+.find-form-wrapper{
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+}
+
+.find-form h2{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.find-form p{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.find-form form input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF66;
+    width: calc(386px - 28px - 5px);
+    padding: 10px 0;
+}
+
+.find-form form .button{
+    display: flex;
+}
+
+.find-form form{
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.map{
+    width: 740px;
+    height: 604px;
+    background-image: url("../src/img/map.jpg");
+}
+
+.map-link{
+    display: inline-block;
+    position: relative;
+}
+
+.map-link .hide{
+    display: none;
+}
+
+.map-link:hover .visible{
+    display: none;
+}
+
+.map-link:hover .hide{
+    display: block;
+}
+
+.map-link img{
+    display: block;
+}
+
+.first:hover::after{
+    position: absolute;
+    content: "ул. Улица 1";
+    display: flex;
+    word-wrap: normal;
+    width: max-content;
+    background-color: #67676794;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    top: -50px;
+    right: -95px;
+}
+
+.first{
+    top: 149px;
+    left: 87px;
+}
+
+.second:hover::after{
+    position: absolute;
+    content: "ул. Улица 2";
+    display: flex;
+    word-wrap: normal;
+    width: max-content;
+    background-color: #67676794;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    top: -50px;
+    right: -95px;
+}
+
+.second{
+    top: 172px;
+    left: 200px;
+}
+
+.third:hover::after{
+    position: absolute;
+    content: "ул. Улица 3";
+    display: flex;
+    word-wrap: normal;
+    width: max-content;
+    background-color: #67676794;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    top: -50px;
+    right: -95px;
+}
+
+.third{
+    top: 232px;
+    left: 278px;
+}
+
+.fourth:hover::after{
+    position: absolute;
+    content: "ул. Улица 4";
+    display: flex;
+    word-wrap: normal;
+    width: max-content;
+    background-color: #67676794;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    top: -50px;
+    right: -95px;
+}
+
+.fourth{
+    top: 412px;
+    left: 121px;
+}
+
+.fifth:hover::after{
+    position: absolute;
+    content: "ул. Улица 5";
+    display: flex;
+    word-wrap: normal;
+    width: max-content;
+    background-color: #67676794;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    top: -50px;
+    right: -95px;
+}
+
+.fifth{
+    top: 360px;
+    left: 286px;
+}
+
+.find-us{
+    margin-bottom: 20px;
+}
+
+.products-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 400px 600px 400px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+        "item1 big-item item4"
+        "item2 big-item item5";
+}
+
+.product-item:nth-child(1){
+    grid-area: item1;
+}
+
+.product-item:nth-child(2){
+    grid-area: item2;
+}
+
+.product-item:nth-last-child(1){
+    grid-area: item4;
+}
+
+.product-item:nth-last-child(2){
+    grid-area: item5;
+}
+
+.product-item a{
+    background-color: #EDEDED;
+    width: 400px;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.product-item.big-item a{
+    grid-area: big-item;
+    width: 600px;
+    background-image: url("../src/img/etoilehublot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-item.big-item .product-description{
+    margin-top: 714px;
+}
+
+.product-item .product-img{
+    display: block;
+    margin-top: 47px;
+    margin-bottom: 67px;
+}
+
+.product-item .product-description{
+    align-self: flex-start;
+    margin-left: 30px;
+}
+
+.product-item .product-title{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #272727;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.product-item .materials{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color: #757575;
+    margin-bottom: 9px;
+}
+
+.product-item .price{
+    margin: 0;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    color: #E2B67A;
+    margin-bottom: 20px;
+}
+
+.gallery{
+    background-color: #272727;
+    overflow: hidden;
+
+}
+
+.gallery h2{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 53px;
+    color: #FFFFFF;
+    padding-top: 100px;
+    padding-left: 162px;
+    margin-bottom: 80px;
+}
+
+.gallery-list{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 80px;
+    transition: all ease 0.35s;
+}
+
+.gallery-list .selected{
+    box-shadow: 0 0 25px 0 #FFFFFF;
+    transition: all ease 0.35s;
+}
+
+.gallery-item img{
+    display: block;
+    height: 385px;
+}
+
+.slider-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-footer .social-list{
+    margin-left: 162px;
+}
+
+.select-img-list{
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 50px;
+    gap: 17px;
+}
+
+.img-item{
+    width: 8px;
+    height: 8px;
+    background-color: #656565;
+    border-radius: 50%;
+}
+
+.dot-selected{
+    background-color: #FFFFFF;
+    border: 1.8px solid #FFFFFF;
+}
+
+.turn-button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.turn-button img{
+    display: block;
+}
+
+.contacts{
+    display: flex;
+}
+
+.slider-status{
+    display: flex;
+    margin-right: 162px;
+    margin-bottom: 103px;
+    align-items: center;
+}
+
+.contacts-content h2{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #272727;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.telephone a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Futura PT";
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #959595;
+    margin-bottom: 110px;
+}
+
+form.mail-form input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    padding: 8px 0;
+    width: calc(280px - 28px);
+}
+
+form.mail-form{
+    border-bottom: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 180px;
+    width: 280px;
+}
+
+.contacts-content{
+    width: calc(100% - 710px);
+    padding-top: 175px;
+    padding-left: 183px;
+}
+
+.main-footer{
+    width: 1116px;
+    margin: 0 auto;
+    background-color: #272727;
+    padding: 80px 162px 90px;
+    display: grid;
+    row-gap: 90px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    grid-template-areas: 
+    "list list list"
+    "logo telephone mail";
+}
+
+.main-footer img.logo{
+    display: block;
+    grid-area: logo;
+    margin-right: 314px;
+    margin-top: 18px;
+}
+
+.footer-contacts{
+    grid-area: telephone;
+    margin-right: 80px;
+}
+
+.footer-contacts h2{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-contacts a{
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    text-decoration: none;
+    color: #C2C2C2;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-footer .mail{
+    grid-area: mail;
+}
+
+.main-footer .mail h2{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.main-footer form{
+    border-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.main-footer form input{
+    color: #FFFFFF;
+}
+
+.markets{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 7px;
+    align-items: center;
+}
+
+.market-item a, .market-item img{
+    display: block;
+}
+
+.footer-links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    grid-area: list;
+}
+
+.link-item{
+    display: flex;
+}
+
+.link-item a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+}
+
+.nav-item:hover, .card-link:hover, .gender-item:hover,
+.product-item:hover, .social-item:hover, .turn-button:hover,
+.phone-number:hover, form a:hover, .link-item:hover,
+.market-item:hover{
+    opacity: 0.7;
+}
+
+.nav-item:active, .card-link:active, .gender-item:active,
+.product-item:active, .social-item:active, .turn-button:active,
+.phone-number:active, form a:active, .link-item:active,
+.market-item:active{
+    opacity: 0.5;
+}
+
+.menu-link.opened .line-1,
+.menu-link.opened .line-2, 
+.menu-link.opened .line-3{
+    display: none;
+}
+
+/* Кнопка не нажималась, меню скрыто */
+.menu-section{
+    display: none;
+}
+.menu ~ .hidden{
+    display: none;
+}
+/* ----------------------------------------- */
+
+/* Кнопка нажималась, меню открыто */
+.menu-section.opened{
+    display: block;
+    height: 864px;
+    transition: all ease 1s;
+}
+.menu.opened .menu-line{
+    display: none;
+}
+.nav-item .hidden, .hidden{
+    display: none;
+}
+.topics-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding: 27px 197px 27px 163px;
+    background-color: #2f2f2f;
+    margin-top: 40px;
+}
+.topic-item h2{
+    display: block;
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.topic-item.active{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #FFFFFF;
+    text-underline-offset: 29px;
+    transition: all ease 0.3s;
+}
+.jewelry-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    margin-left: 163px;
+    margin-top: 70px;
+    gap: 100px;
+    border-bottom: 2px solid #2F2F2F;
+    margin-right: 162px;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+}
+.jewelry-item h3{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.jewelry-topics{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 15px;
+    margin-top: 30px;
+}
+.jewelry-topics-item a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.brends a{
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 21px;
+    color: #EFC58B;
+}
+.new-collection{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 749px;
+    background-image: url("../src/img/menu-footer.jpg");
+    background-repeat: no-repeat;
+    flex-direction: column;
+    text-decoration: none;
+    margin-right: 85px;
+}
+.dark{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(39, 39, 39, 0.5);
+    top: 0;
+    left: 0;
+}
+.new-collection *{
+    z-index: 1;
+}
+.new-collection p{
+    margin: 0;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+p.collection-item-1{
+    margin-bottom: 55px;
+}
+.collection-item-2{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 53px;
+    align-self: center;
+    margin-bottom: 54px;
+}
+.collection-item-3{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+.collection-item-3 p{
+    margin-right: 23px;
+}
+.menu-footer{
+    margin-left: 164px;
+    display: flex;
+}
+.menu-footer .mail h2{
+    color: #FFFFFF;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.menu-footer form.mail-form{
+    margin-bottom: 16px;
+    border-color: #FFFFFF;
+}
+.jewelry-topics-item:hover, .new-collection:hover,
+.menu-section .topic-item:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.jewelry-topics-item:active, .new-collection:active,
+.menu-section .topic-item:active{
+    opacity: 0.5;
+}
+/* ------------------------------------------- */

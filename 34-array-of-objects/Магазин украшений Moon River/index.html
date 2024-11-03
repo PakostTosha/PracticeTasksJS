@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon River</title>
+
+    <!-- FONTS -->
+    <!-- ---------------------------------------------------------------- -->
+    <!-- Forum 400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <!-- Future PT 300,400,450 -->
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+    <!-- Segoe UI 300 Italic, (400 Italic - none) -->
+    <link rel="stylesheet" href="src/fonts/SegoeUI/stylesheet.css">
+    <!-- ---------------------------------------------------------------- -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Сделать фичу для меню: при нажатии меняется иконка, а также
+    открывается самое меню (Frame 4) -->
+    <!-- Стиль активный по нажатию -->
+    <header>
+        <!-- Декоративный чёрный фон популярного товара, сдвинутый вправо -->
+        <!-- Спрятан -->
+        <div class="background-decor"></div>
+        <!-- ------------------------------------------------------------ -->
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item logo">
+                    <a href="#">
+                        <!-- белая иконка -->
+                        <img src="src/img/logo.svg" width="258" height="53" alt="Moon River">
+                    </a>
+                </li>
+                <li class="nav-item favorites">
+                    <a href="#" class="favorites-link">
+                        <img src="src/img/favorites.svg" width="22" height="19" alt="Избранное">
+                    </a>
+                </li>
+                <li class="nav-item user">
+                    <a href="#" class="user-link">
+                        <img src="src/img/user.svg" width="13" height="20" alt="Личный кабинет">
+                    </a>
+                </li>
+                <li class="nav-item buy">
+                    <a href="#" class="buy-link">
+                        <img class="buy-img" src="src/img/buy.svg" width="15" height="20" alt="Корзина">
+                        <p class="buy-count">1</p>
+                    </a>
+                </li>
+                <!-- opened -->
+                <li class="nav-item menu">
+                    <a class="menu-link">
+                        <div class="menu-line line-1"></div>
+                        <div class="menu-line line-2"></div>
+                        <div class="menu-line line-3"></div>
+                        <!-- hidden -->
+                        <img class="hidden" src="src/img/menu-close.svg" width="22" height="22">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- opened -->
+        <section class="menu-section">
+            <ul class="topics-list">
+                <li class="topic-item active">
+                    <h2>Ювелирные изделия</h2>
+                </li>
+                <li class="topic-item">
+                    <h2>часы</h2>
+                </li>
+                <li class="topic-item">
+                    <h2>ароматы</h2>
+                </li>
+                <li class="topic-item">
+                    <h2>бренды</h2>
+                </li>
+                <li class="topic-item">
+                    <h2>изделия из кожи</h2>
+                </li>
+                <li class="topic-item">
+                    <h2>Свадебные украшения</h2>
+                </li>
+                <li class="topic-item">
+                    <h2>другое</h2>
+                </li>
+            </ul>
+            <ul class="jewelry-list">
+                <li class="jewelry-item">
+                    <h3>для кого</h3>
+                    <ul class="jewelry-topics">
+                        <li class="jewelry-topics-item">
+                            <a href="#">Для женщин</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Для мужчин</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Для детей</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="jewelry-item">
+                    <h3>Категории</h3>
+                    <ul class="jewelry-topics">
+                        <li class="jewelry-topics-item">
+                            <a href="#">Кольца</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Браслеты</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Колье</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Серьги</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Броши</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="jewelry-item">
+                    <h3>материал</h3>
+                    <ul class="jewelry-topics">
+                        <li class="jewelry-topics-item">
+                            <a href="#">Изделия <br>
+                                с бриллиантами</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Желтое золото</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Белое золото</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Розовое золото</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="jewelry-item">
+                    <h3>бренд</h3>
+                    <ul class="jewelry-topics">
+                        <li class="jewelry-topics-item">
+                            <a href="#">Mercury</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Chopard</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Cartier</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Graff</a>
+                        </li>
+                        <li class="jewelry-topics-item">
+                            <a href="#">Garrard</a>
+                        </li>
+                        <li class="jewelry-topics-item brends">
+                            <a href="#">Показать все бренды</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menu-footer">
+                <a href="#" class="new-collection">
+                    <div class="dark"></div>
+                    <p class="collection-item-1">Новая коллекция by Mercury</p>
+                    <h2 class="collection-item-2">JUSTE UN CLOU</h2>
+                    <div class="wrapper collection-item-3">
+                        <p>Cмотреть коллекцию</p>
+                        <button type="button" class="turn-button">
+                            <img src="src/img/next-line.svg" width="31" height="17">
+                        </button>
+                    </div>
+                </a>
+                <div class="menu-wrapper">
+                    <div class="footer-contacts">
+                        <h2>телефон горячей линии</h2>
+                        <a href="tel:8800456456" class="phone-number">+7 800 456 456</a>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="https://www.facebook.com/Meta">
+                                    <img src="src/img/Facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/">
+                                    <img src="src/img/Instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mail">
+                        <h2>подпишитесь на новости</h2>
+                        <form class="mail-form" action="#" method="get">
+                            <input type="email" placeholder="Введите E-mail">
+                            <a href="#" title="Найти">
+                                <img src="src/img/Line.svg" width="28" height="15" alt="Кнопка 'найти'">
+                            </a>
+                        </form>
+                        <ul class="markets">
+                            <li class="market-item">
+                                <a href="#">
+                                    <img src="src/img/app-store.svg" width="90" height="30" alt="App Store">
+                                </a>
+                            </li>
+                            <li class="market-item">
+                                <a href="#">
+                                    <img src="src/img/google-play.png" width="103" height="35" alt="Google Play">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <secction class="popular-item">
+            <div class="card">
+                <div class="card-preview">
+                    <div class="card-collection">
+                        <h1>HIGH JEWELRY</h1>
+                        <div class="wrapper">
+                            <div class="decoration-underline"></div>
+                            <a class="card-link" href="#">Смотреть коллекцию</a>
+                        </div>
+                    </div>
+                    <img src="src/img/card-cartier.png" width="322" height="170" alt="Кольцо Trinity, Cartier"
+                        class="card-img">
+                </div>
+                <footer class="card-footer">
+                    <div class="card-language">
+                        <button class="russian active">RU</button>
+                        <button class="english">EN</button>
+                    </div>
+                    <div class="card-description">
+                        <h2 class="card-name">КОЛЬЦО TRINITY, Cartier</h2>
+                        <p class="materials">Белое золото, бриллианты</p>
+                        <p class="price">498 000 ₽</p>
+                    </div>
+                </footer>
+            </div>
+        </secction>
+
+        <section class="gender-sections">
+            <ul class="gender-list">
+                <li class="gender-item man">
+                    <a href="#">
+                        <p>Перейти в раздел</p>
+                        <h2>Для мужчин</h2>
+                    </a>
+                </li>
+                <li class="gender-item woman">
+                    <a href="#">
+                        <p>Перейти в раздел</p>
+                        <h2>Для женщин</h2>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="find-us">
+            <ul>
+                <li class="find-form">
+                    <div class="find-form-wrapper">
+                        <h2>Найди <br>
+                            бутик около себя</h2>
+                        <p>Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Введите адрес" value="">
+                            <a href="#" title="Найти">
+                                <img src="src/img/Line.svg" width="28" height="15" alt="Кнопка 'найти'">
+                            </a>
+                        </form>
+                    </div>
+                </li>
+                <li class="map">
+                    <a href="#" class="map-link first">
+                        <img class="visible" src="src/img/geo-link.svg" width="50" height="60" alt="Гео-метка">
+                        <img class="hide" src="src/img/geo-link-fill.svg" width="50" height="60" alt="Гео-метка">
+                    </a>
+                    <a href="#" class="map-link second">
+                        <img class="visible" src="src/img/geo-link.svg" width="50" height="60" alt="Гео-метка">
+                        <img class="hide" src="src/img/geo-link-fill.svg" width="50" height="60" alt="Гео-метка">
+                    </a>
+                    <a href="#" class="map-link third">
+                        <img class="visible" src="src/img/geo-link.svg" width="50" height="60" alt="Гео-метка">
+                        <img class="hide" src="src/img/geo-link-fill.svg" width="50" height="60" alt="Гео-метка">
+                    </a>
+                    <a href="#" class="map-link fourth">
+                        <img class="visible" src="src/img/geo-link.svg" width="50" height="60" alt="Гео-метка">
+                        <img class="hide" src="src/img/geo-link-fill.svg" width="50" height="60" alt="Гео-метка">
+                    </a>
+                    <a href="#" class="map-link fifth">
+                        <img class="visible" src="src/img/geo-link.svg" width="50" height="60" alt="Гео-метка">
+                        <img class="hide" src="src/img/geo-link-fill.svg" width="50" height="60" alt="Гео-метка">
+                    </a>
+
+                </li>
+            </ul>
+        </section>
+
+        <section class="products">
+            <ul class="products-list">
+                <li class="product-item">
+                    <a href="#">
+                        <img src="src/img/jowscartier.png" width="260" height="180" alt="Кольцо JOW'S, Cartier"
+                            class="product-img">
+                        <div class="product-description">
+                            <h2 class="product-title">Кольцо JOW'S, Cartier</h2>
+                            <p class="materials">Белое золото, бриллианты</p>
+                            <p class="price">674 000 ₽</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="#">
+                        <img src="src/img/croixcartier.png" width="260" height="180" alt="Кольцо CROIX, Cartier"
+                            class="product-img">
+                        <div class="product-description">
+                            <h2 class="product-title">Кольцо CROIX, Cartier</h2>
+                            <p class="materials">Желтое, белое, розовое золото</p>
+                            <p class="price">432 000 ₽</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item big-item">
+                    <a href="#">
+                        <div class="product-description">
+                            <h2 class="product-title">Колье ETOILE, HUBLOT</h2>
+                            <p class="materials">Белое золото, бриллианты</p>
+                            <p class="price">539 000 ₽</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="#">
+                        <img src="src/img/moonhublot.png" width="260" height="180" alt="Серьги MOON, HUBLOT"
+                            class="product-img">
+                        <div class="product-description">
+                            <h2 class="product-title">Серьги MOON, HUBLOT</h2>
+                            <p class="materials">Желтое золото, сапфир</p>
+                            <p class="price">498 000 ₽</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="#">
+                        <img src="src/img/winblancpain.png" width="260" height="180" alt="Серьги WIN, BLANCPAIN"
+                            class="product-img">
+                        <div class="product-description">
+                            <h2 class="product-title">Серьги WIN, BLANCPAIN</h2>
+                            <p class="materials">Желтое золото, жемчуг</p>
+                            <p class="price">398 000 ₽</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Сделать слайдер -->
+        <section class="gallery">
+            <h2>Мы <br>
+                в социальных сетях</h2>
+
+
+
+
+            <ul class="gallery-list" style="left: 0px;">
+                <template id="gallery-item-template">
+                    <li class="gallery-item">
+                        <img src="" alt="">
+                    </li>
+                </template>
+                <!-- Импортируются из imgs.JSON
+                <li class="gallery-item item3 selected">
+                    <img src="src/img/gallery-list/photo3.jpg" alt="Фото 3">
+                </li>
+                </li> -->
+            </ul>
+            <footer class="slider-footer">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/Meta">
+                            <img src="src/img/Facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/">
+                            <img src="src/img/Instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+                <div class="slider-status">
+                    <button class="turn-button turn-back">
+                        <img src="src/img/back-line.svg" width="51" height="29" alt="Кнопка 'Назад'">
+                    </button>
+                    <!-- Добавить кружочки выделенной фотки -->
+                    <ul class="select-img-list">
+                        <template id="select-img-list-template">
+                            <li class="img-item"></li>
+                        </template>
+                        <!-- В зависимости от количества фоток в галереи
+                            <li class="img-item dot-selected"></li> -->
+                    </ul>
+                    <button type="button" class="turn-button turn-next">
+                        <img src="src/img/next-line.svg" width="51" height="29" alt="Кнопка 'Далее'">
+                    </button>
+                </div>
+            </footer>
+        </section>
+        <!--  -->
+
+        <section class="contacts">
+            <img src="src/img/contacnt-photo.jpg" width="710" height="640" class="contacts-img">
+            <div class="contacts-content">
+                <div class="telephone">
+                    <h2>Телефон флагманского магазина</h2>
+                    <a href="tel:8800456456" class="phone-number">+7 800 456 456</a>
+                </div>
+                <div class="mail">
+                    <h2>подпишитесь на новости</h2>
+                    <form class="mail-form" action="#" method="get">
+                        <input type="email" placeholder="Введите E-mail">
+                        <a href="#" title="Найти">
+                            <img src="src/img/Line-black.svg" width="28" height="15" alt="Кнопка 'найти'">
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <ul class="footer-links">
+            <li class="link-item">
+                <a href="#">работа в компании</a>
+            </li>
+            <li class="link-item">
+                <a href="#">условия пользования</a>
+            </li>
+            <li class="link-item">
+                <a href="#">выходные данные</a>
+            </li>
+            <li class="link-item">
+                <a href="#">политика конфиденциальности</a>
+            </li>
+            <li class="link-item">
+                <a href="#">карта сайта</a>
+            </li>
+        </ul>
+        <img src="src/img/logo-white.svg" width="258" height="53" alt="Логотип MoonRiver" class="logo">
+        <div class="footer-contacts">
+            <h2>телефон горячей линии</h2>
+            <a href="tel:8800456456" class="phone-number">+7 800 456 456</a>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://www.facebook.com/Meta">
+                        <img src="src/img/Facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.instagram.com/">
+                        <img src="src/img/Instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mail">
+            <h2>подпишитесь на новости</h2>
+            <form class="mail-form" action="#" method="get">
+                <input type="email" placeholder="Введите E-mail">
+                <a href="#" title="Найти">
+                    <img src="src/img/Line.svg" width="28" height="15" alt="Кнопка 'найти'">
+                </a>
+            </form>
+            <ul class="markets">
+                <li class="market-item">
+                    <a href="#">
+                        <img src="src/img/app-store.svg" width="90" height="30" alt="App Store">
+                    </a>
+                </li>
+                <li class="market-item">
+                    <a href="#">
+                        <img src="src/img/google-play.png" width="103" height="35" alt="Google Play">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
